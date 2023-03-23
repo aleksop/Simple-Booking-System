@@ -1,0 +1,199 @@
+
+hr.footer {
+    border-top: 2px solid rgb(24,102,160);
+    width: 100%
+  }
+
+#bar
+{
+    min-height: 165px;
+    background-color: rgb(24,102,160);
+    color: #d9dfeb;
+    font-size: 40px;
+    padding: 4px;
+}
+
+#mycal
+{
+    width: 800px;   
+    height: 500px;  
+    text-align: center;
+    margin: auto;
+}
+
+#logo
+{
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 100px;
+    text-align: center;
+}
+
+#menu, #menu li {
+    margin: 0; 
+    padding: 0; 
+
+}
+
+#menu {
+    background: #ffffff; 
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.nav_links {
+    padding: 3px 80px;
+    margin-top: 6px; 
+    color: #000; 
+    text-decoration: none; 
+    font-size: 18px; 
+}
+
+.profileLink {
+    padding: 3px 80px;
+    margin-top: 6px; 
+    color: #000; 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.signup-link {
+    color: #000; 
+    text-decoration: none; 
+    float: left;
+    margin-top: 7px; 
+}
+
+.usererror {
+    color: rgb(236, 34, 34); 
+    text-decoration: none; 
+    margin-top: 7px; 
+}
+
+.usersuccess {
+    color: rgb(13, 206, 87); 
+    text-decoration: none; 
+    margin-top: 7px; 
+}
+
+
+#menu a:hover {
+    background: #8AB8CC;
+}
+
+
+a[href^="mailto:"] {
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+  }
+
+   .signup {
+    align-items: center;
+    width: 35em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+ 
+
+ 
+  .header-login {
+    width: 36em;
+    text-transform: uppercase;
+    float: right;
+
+  }
+ 
+ 
+  .buttonLogin {
+
+    /*margin-left: 75px;
+    color: green;
+    text-transform: uppercase;
+    border: 1px solid; */
+    text-transform: uppercase;
+    border: solid 1px grey;
+    color: #fff;
+    background-color: #1a17c7;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    padding: 5px;
+    text-decoration: none; 
+   }
+
+   .buttonSignup {
+
+    /*margin-left: 75px;
+    color: gree
+    text-transform: uppercase;
+    border: 1px solid; */
+    text-transform: uppercase;
+    border: solid 1px grey; 
+    color: #fff;
+    background-color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    padding: 5px;
+    text-decoration: none; 
+   }
+    
+  .buttonLogout {
+
+    /*margin-left: 75px;
+    color: green;
+    text-transform: uppercase;
+    border: 1px solid; */
+    text-transform: uppercase;
+    border: solid 1px grey;
+   /* float: right; */
+    color: #fff;
+    background-color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    padding: 5px;
+   }
+
+
+   .login {
+    border-radius: 4px;
+    border: solid 1px grey;
+    float: left;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+   }
+
+   .signu {
+    border-radius: 4px;
+    border: solid 1px grey;
+
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 15px;
+   }
+
+   .AddressProfileInput {
+    border-radius: 4px;
+    border: solid 1px grey;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+   }
+
+
