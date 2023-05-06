@@ -9,12 +9,25 @@
   <h3>Setting up...</h3>
 
   <?php
+
   $admin = "admin";
-  $pwdAdmin = "1234";
+  $pwdAdmin = "1234RYm";
 
   require_once  'classes/dbh.classes.php';
   require_once  'classes/users.classes.php';
   require_once  'classes/signup-controller.classes.php';
+
+
+  try {
+    $conn = new PDO("mysql:host=" . DB_HOST , DB_USER, DB_PASSWORD);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "CREATE DATABASE IF NOT EXISTS epiz_33934984_booking";
+    $conn->exec($sql);
+    echo "DB created successfully<br>";
+  } catch (PDOException $e) {
+    echo $sql . "<br>" . $e->getMessage();
+  }
+
 
   $connection = Dbh::getInstance();
 
@@ -26,7 +39,7 @@
   `evt_color` varchar(7) NOT NULL,
   `evt_bg` varchar(7) NOT NULL,
   `evt_phone` varchar(20) NOT NULL,
-  `userId` int(11) NOT NULL,
+  `userId` int(11),
   INDEX(evt_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
 
@@ -46,7 +59,7 @@
 
   $sql = "CREATE TABLE IF NOT EXISTS `users` (
   `idUser` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `uid` tinytext NOT NULL ,
+  `uid` varchar(64) NOT NULL ,
   `email` tinytext NOT NULL,
   `phone` tinytext DEFAULT NULL,
   `address` tinytext DEFAULT NULL,
@@ -57,7 +70,7 @@
   INDEX(uid) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
   $connection->query($sql);
-  echo "Table `reviews` created or already exists.<br>";
+  echo "Table `users` created or already exists.<br>";
 
 
   $signup = new SignupController("admin", "", "", "", "admin", "1234", "1234");
